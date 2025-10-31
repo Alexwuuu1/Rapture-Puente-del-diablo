@@ -1,0 +1,415 @@
+/* ======= ESTILOS GLOBALES ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #111;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+p, li {
+    font-family: 'Inter', sans-serif;
+    color: #444;
+}
+
+/* ======= NAVBAR ======= */
+.nav1 {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contenedor-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    position: absolute;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.logo-detail {
+    width: 20px;
+    height: 2px;
+    background-color: #6d8b74;
+    margin-top: 5px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+}
+
+.enlaces a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover, .enlaces a.active {
+    color: #6d8b74;
+}
+
+.icono {
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ======= HERO (HEADER PRINCIPAL) ======= */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: #fff;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6d8b74;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.hero-blocks {
+    margin-top: 2rem;
+}
+
+.hero-block {
+    margin-bottom: 2rem;
+}
+
+.hero-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-bottom {
+    margin-top: 4rem;
+}
+
+.hero-main-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: #111;
+}
+
+/* ======= SECTIONS ======= */
+.travesia, .jugabilidad, .experiencia, .destino, .historia, .personajes, .caracteristicas, .creditos {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.travesia h2, .jugabilidad h2, .experiencia h2, .destino h2, .personajes h2, .caracteristicas h2, .creditos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.travesia p, .jugabilidad p, .experiencia p, .destino p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+.historia-content, .creditos-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historia-intro, .historia-sinopsis, .creditos-section {
+    margin-bottom: 2rem;
+}
+
+.historia-intro h3, .historia-sinopsis h3, .creditos-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.historia-intro p, .historia-sinopsis p, .creditos-section p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ======= HISTORIA SECTION (DARK THEME) ======= */
+.historia {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.historia .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.historia h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    border-left: 5px solid #e30000;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.historia-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.historia-intro, .historia-sinopsis {
+    padding: 50px 0;
+}
+
+.historia-intro h3, .historia-sinopsis h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    border-left: 5px solid #e30000;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.historia-intro p, .historia-sinopsis p {
+    font-size: 1.1em;
+    text-align: justify;
+    color: #fff;
+}
+
+.historia hr {
+    border: none;
+    border-top: 1px dashed #333;
+    margin: 40px 0;
+}
+
+/* ======= CARD CONTAINER ======= */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #f6f4ef;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background-color: #f6f4ef;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer strong {
+    color: #111;
+}
+
+/* ======= MODAL ======= */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+/* ======= ANIMATIONS ======= */
+.card, .historia-intro, .historia-sinopsis {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.animate, .historia-intro.animate, .historia-sinopsis.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ======= MOBILE MENU ======= */
+.enlaces.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-main-title {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-nav {
+        justify-content: space-between;
+    }
+
+    .enlaces {
+        display: none;
+    }
+
+    .icono {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
